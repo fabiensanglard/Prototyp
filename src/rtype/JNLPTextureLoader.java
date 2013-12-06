@@ -31,6 +31,7 @@ import java.nio.ByteOrder;
 import java.nio.IntBuffer;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -40,8 +41,6 @@ import javax.imageio.stream.FileImageInputStream;
 
 //import org.lwjgl.devil.IL;
 import org.lwjgl.opengl.GL11;
-
-import com.sun.org.apache.xalan.internal.xsltc.runtime.Hashtable;
 
 import rtype.entity.IEntity;
 import rtype.entity.Logger;
