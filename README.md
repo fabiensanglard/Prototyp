@@ -2,9 +2,10 @@ Prototyp is a JAVA shoot'em up using LWJGL.
 
 HOW TO RUN ?
 
-run the following commands in your command line:\n
-mvn clean install\n
-mvn exec:exec\n
+run the following commands in your command line:
+
+*mvn clean install\n
+*mvn exec:exec\n
 
 Enjoy !!
 
