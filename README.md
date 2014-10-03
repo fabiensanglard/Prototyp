@@ -4,8 +4,8 @@ HOW TO RUN ?
 
 run the following commands in your command line:
 
-*mvn clean install\n
-*mvn exec:exec\n
+1. mvn clean install
+2. mvn exec:exec
 
 Enjoy !!
 
