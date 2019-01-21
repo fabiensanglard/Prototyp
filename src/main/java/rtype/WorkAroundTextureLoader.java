@@ -27,6 +27,8 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.IntBuffer;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.imageio.ImageIO;
 
@@ -34,7 +36,6 @@ import org.lwjgl.opengl.GL11;
 
 import rtype.entity.IEntity;
 
-import com.sun.org.apache.xalan.internal.xsltc.runtime.Hashtable;
 
 public class WorkAroundTextureLoader implements ITextureLoader
 {
@@ -129,7 +130,7 @@ public class WorkAroundTextureLoader implements ITextureLoader
         return animations[animationID];
     }
 
-    Hashtable imageCache = new Hashtable();
+    Map<String, BufferedImage> imageCache = new HashMap<String, BufferedImage>();
 
     // Offset are in term off pixel, not byte, the image loader figure out alone what is the bytesPerPixel
     private  Texture loadTexture(String path,int xOffSet, int yOffSet, int textWidth, int textHeight) {
